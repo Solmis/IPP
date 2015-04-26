@@ -1,0 +1,173 @@
+object eltWindow: TeltWindow
+  Left = 373
+  Height = 600
+  Top = 93
+  Width = 800
+  BorderStyle = bsSingle
+  Caption = 'Testy językowe'
+  ClientHeight = 600
+  ClientWidth = 800
+  Color = clInactiveCaptionText
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.2.2.0'
+  Visible = True
+  object eltStoreroom: TPanel
+    Left = 0
+    Height = 160
+    Top = 440
+    Width = 600
+    Color = 11184810
+    ParentColor = False
+    TabOrder = 0
+  end
+  object eltControl: TPanel
+    Left = 600
+    Height = 600
+    Top = 0
+    Width = 200
+    ClientHeight = 600
+    ClientWidth = 200
+    Color = 7887675
+    ParentColor = False
+    TabOrder = 1
+    object eltNext: TButton
+      Left = 17
+      Height = 45
+      Top = 536
+      Width = 160
+      Caption = 'Następne zdanie'
+      OnClick = eltNextClick
+      TabOrder = 0
+    end
+    object eltCorrect: TLabel
+      Left = 32
+      Height = 33
+      Top = 232
+      Width = 106
+      Caption = 'Poprawne'
+      Font.Color = clLime
+      Font.Height = -24
+      ParentColor = False
+      ParentFont = False
+    end
+    object eltIncorrect: TLabel
+      Left = 17
+      Height = 33
+      Top = 352
+      Width = 140
+      Caption = 'Niepoprawne'
+      Font.Color = clRed
+      Font.Height = -24
+      ParentColor = False
+      ParentFont = False
+    end
+    object eltBtLoad: TButton
+      Left = 17
+      Height = 44
+      Top = 16
+      Width = 160
+      Caption = 'Wybierz test'
+      OnClick = eltBtLoadClick
+      TabOrder = 1
+    end
+    object eltProg: TLabel
+      Left = 40
+      Height = 40
+      Top = 96
+      Width = 89
+      Caption = 'Postęp'
+      Font.Color = clSkyBlue
+      Font.Height = -29
+      ParentColor = False
+      ParentFont = False
+    end
+    object eltProgNum: TLabel
+      Left = 56
+      Height = 33
+      Top = 144
+      Width = 54
+      Caption = '0/20'
+      Font.Color = clSkyBlue
+      Font.Height = -24
+      ParentColor = False
+      ParentFont = False
+    end
+    object eltCorrNum: TLabel
+      Left = 88
+      Height = 33
+      Top = 272
+      Width = 15
+      Caption = '0'
+      Font.Color = clLime
+      Font.Height = -24
+      ParentColor = False
+      ParentFont = False
+    end
+    object eltIncorrNum: TLabel
+      Left = 88
+      Height = 33
+      Top = 392
+      Width = 15
+      Caption = '0'
+      Font.Color = clRed
+      Font.Height = -24
+      ParentColor = False
+      ParentFont = False
+    end
+    object eltCheck: TButton
+      Left = 17
+      Height = 46
+      Top = 466
+      Width = 160
+      Caption = 'Sprawdź'
+      OnClick = eltCheckClick
+      TabOrder = 2
+    end
+    object eltScore: TButton
+      Left = 17
+      Height = 49
+      Top = 502
+      Width = 160
+      Caption = 'Zobacz wynik'
+      OnClick = eltScoreClick
+      TabOrder = 3
+      Visible = False
+    end
+  end
+  object eltMainBox: TPanel
+    Left = 0
+    Height = 440
+    Top = 0
+    Width = 600
+    ClientHeight = 440
+    ClientWidth = 600
+    ParentFont = False
+    TabOrder = 2
+    object eltStart: TLabel
+      Left = 152
+      Height = 33
+      Top = 176
+      Width = 272
+      Caption = 'Kliknij tutaj, by rozpocząć'
+      Font.Color = clMedGray
+      Font.Height = -24
+      ParentColor = False
+      ParentFont = False
+      Visible = False
+      OnClick = eltStartClick
+    end
+    object eltEnd: TLabel
+      Left = 216
+      Height = 73
+      Top = 48
+      Width = 155
+      Caption = 'Koniec'
+      Font.Color = 14059059
+      Font.Height = -53
+      ParentColor = False
+      ParentFont = False
+      Visible = False
+    end
+  end
+end

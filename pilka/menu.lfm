@@ -1,0 +1,80 @@
+object eltMenu: TeltMenu
+  Left = 467
+  Height = 534
+  Top = 107
+  Width = 640
+  BorderStyle = bsSingle
+  Caption = 'Piłka - menu główne'
+  ClientHeight = 534
+  ClientWidth = 640
+  Color = clWhite
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.2.2.0'
+  object eltMenuBgr: TImage
+    Left = 48
+    Height = 480
+    Top = 40
+    Width = 504
+  end
+  object eltNewGame: TLabel
+    Left = 272
+    Height = 29
+    Top = 64
+    Width = 92
+    Caption = 'Nowa gra'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Cantarell'
+    ParentColor = False
+    ParentFont = False
+    OnClick = eltNewGameClick
+    OnMouseEnter = onMouseEnter
+    OnMouseLeave = onMouseLeave
+  end
+  object eltLoadGame: TLabel
+    Left = 96
+    Height = 29
+    Top = 224
+    Width = 112
+    Caption = 'Wczytaj grę'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Cantarell'
+    ParentColor = False
+    ParentFont = False
+    OnClick = eltLoadGameClick
+    OnMouseEnter = onMouseEnter
+    OnMouseLeave = onMouseLeave
+  end
+  object eltInstructions: TLabel
+    Left = 328
+    Height = 29
+    Top = 280
+    Width = 91
+    Caption = 'Instrukcja'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Cantarell'
+    ParentColor = False
+    ParentFont = False
+    OnClick = eltInstructionsClick
+    OnMouseEnter = onMouseEnter
+    OnMouseLeave = onMouseLeave
+  end
+  object eltQuit: TLabel
+    Left = 192
+    Height = 29
+    Top = 432
+    Width = 58
+    Caption = 'Wyjdź'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Cantarell'
+    ParentColor = False
+    ParentFont = False
+    OnClick = eltQuitClick
+    OnMouseEnter = onMouseEnter
+    OnMouseLeave = onMouseLeave
+  end
+end

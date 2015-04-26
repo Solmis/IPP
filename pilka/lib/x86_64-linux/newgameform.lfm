@@ -1,0 +1,41 @@
+object eltNewGameForm: TeltNewGameForm
+  Left = 402
+  Height = 157
+  Top = 305
+  Width = 684
+  BorderStyle = bsDialog
+  Caption = 'Piłka - nowa gra'
+  ClientHeight = 157
+  ClientWidth = 684
+  LCLVersion = '1.2.2.0'
+  object eltHumans: TButton
+    Left = 24
+    Height = 49
+    Top = 48
+    Width = 191
+    Caption = 'Człowiek vs Człowiek'
+    ModalResult = 1
+    OnClick = eltHumansClick
+    TabOrder = 0
+  end
+  object eltHumanComp: TButton
+    Left = 232
+    Height = 49
+    Top = 48
+    Width = 216
+    Caption = 'Człowiek vs Komputer'
+    ModalResult = 1
+    OnClick = eltHumanCompClick
+    TabOrder = 1
+  end
+  object eltComputers: TButton
+    Left = 464
+    Height = 49
+    Top = 48
+    Width = 200
+    Caption = 'Komputer vs Komputer'
+    ModalResult = 1
+    OnClick = eltComputersClick
+    TabOrder = 2
+  end
+end

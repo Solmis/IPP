@@ -1,0 +1,59 @@
+object eltInstrForm: TeltInstrForm
+  Left = 497
+  Height = 559
+  Top = 76
+  Width = 683
+  Caption = 'Piłka - instrukcja'
+  ClientHeight = 559
+  ClientWidth = 683
+  Color = clWhite
+  LCLVersion = '1.2.2.0'
+  object eltControls: TLabel
+    Left = 40
+    Height = 38
+    Top = 24
+    Width = 190
+    Caption = 'Sterowanie'
+    Font.Color = clGreen
+    Font.Height = -32
+    Font.Name = 'Monospace'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object eltCtrlDesc: TLabel
+    Left = 40
+    Height = 159
+    Top = 72
+    Width = 518
+    Caption = 'Ruchy wykonuje się poprzez klikanie LPM w sąsiednie pola'#10'boiska. Można przemieszczać się po historii rozgrywki za'#10'pomocą przycisków "cofnij", "przywróć" oraz "cofnij cały ruch"'#10'i "przywróć cały ruch". Dwa pierwsze przemieszczają się'#10'o jeden segment, dwa następne o cały ruch.'
+    Font.Color = clBlack
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object eltEditor: TLabel
+    Left = 40
+    Height = 38
+    Top = 264
+    Width = 304
+    Caption = 'Edytor stanu gry'
+    Font.Color = clGreen
+    Font.Height = -32
+    Font.Name = 'Monospace'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object eltEditorDesc: TLabel
+    Left = 40
+    Height = 225
+    Top = 312
+    Width = 482
+    Caption = 'Pozycję piłki ustalić można klikając w odpowiedni przycisk'#10'i wybierając LPM na planszy pole. Ustalić, kto powinien '#10'pierwszy się ruszyć, również można z pomocą przycisku.'#10'Segmenty dodaje się poprzez rysowanie ich na planszy '#10'(od punktu do punktu), przytrzymując LPM. Usuwa się'#10'analogicznie z wykorzystaniem PPM. Operować można'#10'tylko na pojedynczych segmentach (długości 1).'
+    Font.Color = clBlack
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+end

@@ -1,0 +1,21 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TeltWindow','FORMDATA',[
+  'TPF0'#10'TeltWindow'#9'eltWindow'#4'Left'#3#206#1#6'Height'#3'X'#2#3'Top'#2
+  +'o'#5'Width'#3' '#3#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#15'Testy j'
+  +#196#153'zykowe'#12'ClientHeight'#3'X'#2#11'ClientWidth'#3' '#3#5'Color'#7#21
+  +'clInactiveCaptionText'#10'LCLVersion'#6#7'1.2.2.0'#7'Visible'#9#0#6'TPanel'
+  +#12'eltStoreroom'#4'Left'#2#0#6'Height'#3#160#0#3'Top'#3#184#1#5'Width'#3'X'
+  +#2#7'Caption'#6#12'eltStoreroom'#5'Color'#7#9'clBtnText'#11'ParentColor'#8#8
+  +'TabOrder'#2#0#0#0#6'TPanel'#10'eltControl'#4'Left'#3'X'#2#6'Height'#3#160#0
+  +#3'Top'#3#184#1#5'Width'#3#200#0#12'ClientHeight'#3#160#0#11'ClientWidth'#3
+  +#200#0#5'Color'#7#23'clGradientActiveCaption'#11'ParentColor'#8#8'TabOrder'#2
+  +#1#0#7'TButton'#7'eltNext'#4'Left'#2#24#6'Height'#2'-'#3'Top'#2'h'#5'Width'#3
+  +#160#0#7'Caption'#6#16'Nast'#196#153'pne zdanie'#8'TabOrder'#2#0#0#0#6'TLabe'
+  +'l'#10'eltCorrect'#4'Left'#2#17#6'Height'#2#21#3'Top'#2#24#5'Width'#2'I'#7'C'
+  +'aption'#6#10'Poprawne: '#10'Font.Color'#7#6'clLime'#11'ParentColor'#8#10'Pa'
+  +'rentFont'#8#0#0#6'TLabel'#12'eltIncorrect'#4'Left'#2#17#6'Height'#2#21#3'To'
+  +'p'#2'8'#5'Width'#2'^'#7'Caption'#6#13'Niepoprawne: '#10'Font.Color'#7#5'clR'
+  +'ed'#11'ParentColor'#8#10'ParentFont'#8#0#0#0#11'TOpenDialog'#11'OpenDialog1'
+  +#4'left'#2'('#3'top'#2#24#0#0#0
+]);

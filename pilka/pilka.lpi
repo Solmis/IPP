@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="pilka"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="10">
+      <Unit0>
+        <Filename Value="pilka.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="pilka"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="window.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="eltWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="window"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="eltMenu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="menu"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="moves.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="moves"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="history.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="history"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="fields.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fields"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ai"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="saveload.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="saveLoad"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="instrform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="eltInstrForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="instrform"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="newgameform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="eltNewGameForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="newgameform"/>
+      </Unit9>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="pilka"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <MsgFileName Value=""/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,198 @@
+object eltWindow: TeltWindow
+  Left = 313
+  Height = 662
+  Top = 40
+  Width = 860
+  BorderStyle = bsSingle
+  Caption = 'Piłka'
+  ClientHeight = 662
+  ClientWidth = 860
+  Color = clGray
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.2.2.0'
+  object eltBackground: TImage
+    Left = 0
+    Height = 662
+    Top = 0
+    Width = 586
+    OnClick = eltBackgroundClick
+    OnMouseDown = eltBackgroundMouseDown
+    OnMouseMove = eltBackgroundMouseMove
+    OnMouseUp = eltBackgroundMouseUp
+  end
+  object eltBtUndo: TButton
+    Left = 592
+    Height = 48
+    Top = 8
+    Width = 96
+    Caption = 'Cofnij'
+    OnClick = eltBtUndoClick
+    TabOrder = 0
+  end
+  object eltChange: TButton
+    Left = 608
+    Height = 38
+    Top = 616
+    Width = 224
+    Caption = 'Zmień wymiary planszy'
+    OnClick = eltChangeClick
+    TabOrder = 1
+  end
+  object eltBall: TImage
+    Left = 592
+    Height = 10
+    Top = 184
+    Width = 10
+  end
+  object eltPlayer1: TLabel
+    Left = 240
+    Height = 27
+    Top = 0
+    Width = 60
+    Caption = 'Gracz1'
+    Font.Color = clWhite
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object eltPlayer2: TLabel
+    Left = 240
+    Height = 27
+    Top = 632
+    Width = 60
+    Caption = 'Gracz2'
+    Font.Color = clWhite
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object eltBtBigUndo: TButton
+    Left = 696
+    Height = 48
+    Top = 8
+    Width = 152
+    Caption = 'Cofnij cały ruch'
+    OnClick = eltBtBigUndoClick
+    TabOrder = 2
+  end
+  object eltBtBigRedo: TButton
+    Left = 696
+    Height = 48
+    Top = 64
+    Width = 152
+    Caption = 'Przywróć cały ruch'
+    OnClick = eltBtBigRedoClick
+    TabOrder = 3
+  end
+  object eltBtRedo: TButton
+    Left = 592
+    Height = 48
+    Top = 64
+    Width = 96
+    Caption = 'Przywróć'
+    OnClick = eltBtRedoClick
+    TabOrder = 4
+  end
+  object eltBtSave: TButton
+    Left = 648
+    Height = 40
+    Top = 416
+    Width = 144
+    Caption = 'Zapisz'
+    OnClick = eltBtSaveClick
+    TabOrder = 5
+  end
+  object eltBtLoad: TButton
+    Left = 648
+    Height = 40
+    Top = 464
+    Width = 144
+    Caption = 'Wczytaj'
+    OnClick = eltBtLoadClick
+    TabOrder = 6
+  end
+  object eltInstruct: TButton
+    Left = 608
+    Height = 38
+    Top = 568
+    Width = 224
+    Caption = 'Instrukcja'
+    OnClick = eltInstructClick
+    TabOrder = 7
+  end
+  object eltHint: TButton
+    Left = 592
+    Height = 45
+    Top = 120
+    Width = 256
+    Caption = 'Podpowiedź'
+    OnClick = eltHintClick
+    TabOrder = 8
+  end
+  object eltBtNewGame: TButton
+    Left = 648
+    Height = 41
+    Top = 368
+    Width = 144
+    Caption = 'Nowa gra'
+    OnClick = eltBtNewGameClick
+    TabOrder = 9
+  end
+  object eltBtEdit: TButton
+    Left = 608
+    Height = 41
+    Top = 520
+    Width = 224
+    Caption = 'Edytuj stan gry'
+    OnClick = eltBtEditClick
+    TabOrder = 10
+  end
+  object eltWinInfo: TLabel
+    Left = 160
+    Height = 1
+    Top = 208
+    Width = 1
+    Font.Color = 65379
+    Font.Height = -40
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object eltBtStart: TButton
+    Left = 8
+    Height = 40
+    Top = 8
+    Width = 128
+    Caption = 'Start'
+    OnClick = eltBtStartClick
+    TabOrder = 11
+    Visible = False
+  end
+  object eltBallPos: TButton
+    Left = 648
+    Height = 41
+    Top = 208
+    Width = 144
+    Caption = 'Pozycja piłki'
+    OnClick = eltBallPosClick
+    TabOrder = 12
+    Visible = False
+  end
+  object eltBtTurn: TButton
+    Left = 648
+    Height = 41
+    Top = 264
+    Width = 144
+    Caption = 'Czyj ruch'
+    OnClick = eltBtTurnClick
+    TabOrder = 13
+    Visible = False
+  end
+  object eltTimer: TTimer
+    Enabled = False
+    OnTimer = eltTimerTimer
+    left = 592
+    top = 200
+  end
+end

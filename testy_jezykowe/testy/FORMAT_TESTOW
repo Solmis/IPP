@@ -1,0 +1,36 @@
+Format testów
+----------------------------------
+Format pliku tekstowego: *.tsf
+
+----------------------------------
+Zasady tworzenia testów:
+----------------------------------
+- jeden plik zawiera jeden zestaw zdań do uzupełnienia
+- jeden wiersz pliku zawiera dokładnie jeden test (puste linie nie są akceptowane)
+- format testu jest ściśle określony poniższymi zasadami:
+    * każdy test (wiersz pliku) zaczyna się od znaku "{" i kończy znakiem "}"
+    * każde dwa >elementy< oddzielone są od siebie pojedynczym znakiem spacji (" ")
+    * wyróżnia się następujące poprawne >elementy<
+        + słowo: słowa zdania, które będzie treścią testu np "Ala ma kota" (3 słowa); słowa nie mogą
+                 zaczynać się od znaku "[" ani słowem nie może być ciąg czterech kropek ("....").
+        + luka: luki w zdaniu, które gracz powinien wypełnić; podaje się słowo, które powinno
+                się znaleźć w danej luce, a samą lukę sygnalizujemy nawiasami "[]".
+                Przykładowe użycie: "Ala ma [kota]". Dwa pierwsze >słowa< zostaną wyświetlone,
+                a zamiast trzeciego program stworzy lukę do wypełnienia, w którą gracz powinien
+                wstawić słowo "kota".
+        + znak "<": jest to znak, który kończy treść zdania, a zaczyna obszar, w którym znajdują się
+                    >słowa niepoprawne<.
+        + słowa niepoprawne: słowa, które będą niepoprawnymi odpowiedziami w magazynie słów
+        + znak ">": kończy wprowadzanie >słów niepoprawnych<
+
+- Uwagi:
+    * w przypadku >luki< ostatnim jej znakiem powinien być "]", a następnym po nim spacja (" ");
+      w szczególności niedopuszczalne jest wstawianie znaków interpunkcyjnych bezpośrednio po znaku "]".
+      Przykład: "Ala ma [kota] . ".
+    * program zakłada, że:
+        + w każdym zdaniu (teście) znajduje się przynajmniej jedna luka
+        + w każdym teście w magazynie znajdują się niepoprawne słowa
+    * Przykładowy test: "{ Ala ma [kota] . < psa chomika morsa > }"
+        + test zostanie wyświetlony jako: "Ala ma ...........".
+        + w magazynie słów znajdą się słowa: "kota", "psa", "chomika" i "morsa" w losowej kolejności
+        + jedynie wstawienie przez gracza słowa "kota" w miejsce luki jest poprawnym rozwiązaniem
